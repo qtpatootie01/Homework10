@@ -43,14 +43,14 @@
   </footer>
 
   <script type="text/javascript">
-    var choropleth_map = "json_files/HomeworkMap.json";
+    var choropleth_map = "HomeworkMap.json";
     vegaEmbed("#choropleth_map", choropleth_map)
         .then(function (result) {
           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         })
         .catch(console.error);
 
-    var bubbleplot = "json_files/bubbleplot.json";
+    var bubbleplot = "bubbleplot.json";
     vegaEmbed("#bubbleplot", bubbleplot)
         .then(function (result) {
           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
