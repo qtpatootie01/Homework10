@@ -19,7 +19,7 @@
       <div class="row bg2">
         <div class="col-12 d-flex justify-content-center">
           <div class="h1 align-middle p-3" id="headline">
-            Worldwide Life Expectancy in the Year 2014
+            Worldwide Life Expectancy over the years (2010 to 2014)
           </div>
         </div>
       </div>
@@ -33,6 +33,14 @@
   <!-- bubbleplot selection (interactive) -->
   <h2>Visualization 2: Life Expectancy vs GDP</h2>
   <div id="bubbleplot" align="center"></div>
+
+  <!-- butterflychart selection (interactive) -->
+  <h2>Visualization 3: Relationship between Status and Life Expectancy</h2>
+  <div id="butterflychart" align="center"></div>
+
+  <!-- barchart selection (interactive) -->
+  <h2>Visualization 4: Ranking of Life Expectancy</h2>
+  <div id="barchart" align="center"></div>
 
   <!-- Footer -->
   <footer class="text-center position-relative">
@@ -56,6 +64,22 @@
           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         })
         .catch(console.error);
+      
+
+    var butterflychart = "butterflychart.json";
+    vegaEmbed("#butterflychart", butterflychart)
+        .then(function (result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        })
+        .catch(console.error);
+
+    var barchart = "barchart.json";
+    vegaEmbed("#barchart", barchart)
+        .then(function (result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        })
+        .catch(console.error);
+
       </script>
 
 
